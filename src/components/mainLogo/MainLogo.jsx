@@ -16,8 +16,8 @@ export default function MainLogo() {
     visible: {
       pathLength: 1,
       // fill: "rgba(33, 150, 243, 1)",
-      fill: alpha(theme.palette.primary.light, 1),
-      transition: { duration: 1.9, delay: 0.2 },
+      fill: alpha(theme.palette.primary.dark, 1),
+      transition: { duration: 2, delay: 0.2 },
       ease: "easeInOut",
     },
   };
@@ -39,8 +39,8 @@ export default function MainLogo() {
           width: "100%",
           height: "100%",
           overflow: "visible",
-          stroke: "#676363",
-          strokeWidth: "2.2",
+          stroke: alpha(theme.palette.primary.main, 1),
+          strokeWidth: "2.5",
           strokeLinejoin: "round",
           strokeLinecap: "round",
           filter: "drop-shadow(3px 20px 5px rgb(0 0 0 / 0.4))",

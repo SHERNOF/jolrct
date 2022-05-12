@@ -17,7 +17,7 @@ const light = createTheme({
   mode: "light",
   palette: {
     primary: {
-      main: indigo["500"],
+      main: indigo["100"],
       light: indigo["50"],
       dark: indigo["900"],
     },

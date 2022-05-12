@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import { useTheme } from "@emotion/react";
 import React from "react";
 
@@ -12,12 +12,14 @@ export default function About() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        flexDirection: "column",
         color: theme.text.primary,
         fontSize: "5rem",
         background: theme.palette.primary.dark,
       }}
     >
       About
+      <Button variant="outlined">TEST</Button>
     </Box>
   );
 }

@@ -13,7 +13,7 @@ export default function Header() {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 1.7,
+        delay: 2.5,
         duration: 2,
         ease: "easeInOut",
       },

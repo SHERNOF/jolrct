@@ -5,17 +5,17 @@
   top: 0;
   z-index: 100;
   align-items: center;
-  height: 10vh;
+  height: 12vh;
   width: 100%;
-  background: transparent;
+  /* background: rgba(255, 255, 255, 0.9); */
 }
 
 .logoContainer {
-  margin-top: 1rem;
+  /* margin-top: 0.5rem; */
   margin-left: 2rem;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 50%;
-  top: 10px;
+  top: 8px;
   width: 90px;
   height: 90px;
   display: flex;
