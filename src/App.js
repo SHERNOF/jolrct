@@ -1,5 +1,5 @@
 // import { ThemeProvider } from "styled-components";
-import { blue, grey, lightBlue, red } from "@mui/material/colors";
+import { blue, grey, indigo, lightBlue, red } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
 import About from "./components/about/About";
@@ -17,32 +17,35 @@ const light = createTheme({
   mode: "light",
   palette: {
     primary: {
-      main: lightBlue["500"],
-      text: red["500"],
+      main: indigo["500"],
+      light: indigo["50"],
+      dark: indigo["900"],
     },
     grey: grey["A700"],
+  },
+  text: {
+    primary: indigo["50"],
   },
 });
 const dark = createTheme({
   mode: "dark",
   palette: {
     primary: {
-      main: red["500"],
-      text: red["500"],
+      main: red["100"],
+      light: red["50"],
+      dark: red["900"],
     },
     grey: grey["A700"],
+  },
+  text: {
+    primary: red["50"],
   },
 });
 
 function App() {
-  const [currentTheme, setCurrentTheme] = useState(light);
   const now = new Date().getHours();
-  if (now >= 18 && now <= 19) {
-    setCurrentTheme(dark);
-  }
-  console.log(now);
   return (
-    <ThemeProvider theme={currentTheme}>
+    <ThemeProvider theme={now >= 7 && now <= 18 ? dark : light}>
       <Header></Header>
       <div className="App">
         <Frontpage></Frontpage>
