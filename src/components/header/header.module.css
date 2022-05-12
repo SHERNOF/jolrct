@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background: transparent;
+}
+
+.logoContainer {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  top: 10px;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate3d(0, 1, 0, 180deg);
+  animation: spinner 5s ease-in-out infinite;
+  border-radius: 50%;
+  flex-direction: column;
+}
+.logoContainer:before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  filter: blur(3px);
+  z-index: 2;
+}
+
+.myUl li {
+  margin-right: 1rem;
+}
+
+.myUl li .myBtn {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+@keyframes spinner {
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-359deg);
+  }
+}
