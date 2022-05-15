@@ -277,9 +277,12 @@
   </g>
   <style
      type="text/css"
-     id="style9">
+     id="style">
 	.st0{fill:#2196f3;}
 	.st1{fill:#ffffff;}
 	.st2{fill:#FFFFFF;}
+   <!-- .st0{fill:#ffffff;}
+	.st1{fill:#ffffff;}
+	.st2{fill:#FFFFFF;} -->
 </style>
 </svg>

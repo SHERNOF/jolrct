@@ -7,14 +7,12 @@
   align-items: center;
   height: 12vh;
   width: 100%;
-  /* background: rgba(255, 255, 255, 0.9); */
 }
-
 .logoContainer {
-  /* margin-top: 0.5rem; */
   margin-left: 2rem;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 50%;
+  /* border: 1px solid rgb(255, 255, 255); */
+  border: 1px solid;
+  border-color: rgb(255, 255, 255);
   top: 8px;
   width: 90px;
   height: 90px;

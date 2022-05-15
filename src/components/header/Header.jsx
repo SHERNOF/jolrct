@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import classes from "./header.module.css";
 import { Button } from "@mui/material";
 
+import LogoSmall from "../logoSmall/LogoSmall";
+
 export default function Header() {
   const logo = {
     hidden: {
@@ -20,27 +22,6 @@ export default function Header() {
     },
   };
 
-  const container = {
-    initial: { y: 10, opacity: 0 },
-    show: {
-      y: 0,
-      opacity: 1,
-
-      transition: {
-        delay: 2,
-        duration: 2,
-        when: "beforeChildren",
-        staggerChildren: 1,
-        ease: "easeInOut",
-      },
-    },
-  };
-
-  const item = {
-    initial: { opacity: 0 },
-    show: { opacity: 1 },
-  };
-
   return (
     <motion.div
       className={classes.header}
@@ -49,7 +30,7 @@ export default function Header() {
       animate="visible"
     >
       <div className={classes.logoContainer}>
-        <img
+        {/* <img
           style={{
             width: 140,
             height: 140,
@@ -57,7 +38,8 @@ export default function Header() {
           }}
           alt="logo"
           src="/logo/jolSmall.svg"
-        />
+        /> */}
+        <LogoSmall></LogoSmall>
       </div>
 
       <div className={classes.headerLinks}>

@@ -9,15 +9,12 @@ export default function MainLogo() {
   const icon = {
     hidden: {
       pathLength: 0,
-      // fill: "rgba(33, 150, 243, 0)",
       fill: alpha(theme.palette.primary.light, 0),
     },
-
     visible: {
       pathLength: 1,
-      // fill: "rgba(33, 150, 243, 1)",
       fill: alpha(theme.palette.primary.dark, 1),
-      transition: { duration: 2, delay: 0.2 },
+      transition: { duration: 3, delay: 0.3 },
       ease: "easeInOut",
     },
   };

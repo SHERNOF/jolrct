@@ -1,17 +1,9 @@
 // import { ThemeProvider } from "styled-components";
-import { blue, grey, indigo, lightBlue, red } from "@mui/material/colors";
+import { blueGrey, grey, indigo } from "@mui/material/colors";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { useState } from "react";
 import About from "./components/about/About";
 import Frontpage from "./components/frontpage/Frontpage";
 import Header from "./components/header/Header";
-
-// const theme = createTheme({
-//   primary: "#03a9f4",
-//   primaryLight: "#b3e5fc",
-//   primaryDark: "#01579b",
-//   text: "#03a9f4",
-// });
 
 const light = createTheme({
   mode: "light",
@@ -31,14 +23,14 @@ const dark = createTheme({
   mode: "dark",
   palette: {
     primary: {
-      main: red["100"],
-      light: red["50"],
-      dark: red["900"],
+      main: blueGrey["100"],
+      light: blueGrey["50"],
+      dark: blueGrey["900"],
     },
     grey: grey["A700"],
   },
   text: {
-    primary: red["50"],
+    primary: blueGrey["50"],
   },
 });
 

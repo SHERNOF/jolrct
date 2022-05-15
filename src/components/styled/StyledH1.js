@@ -12,3 +12,6 @@ export const StyledH1 = styled.h1`
 export const StyledH2 = styled(StyledH1)`
   font-size: 3rem;
 `;
+export const StyledH3 = styled(StyledH1)`
+  font-size: 1.7rem;
+`;
