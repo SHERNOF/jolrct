@@ -2,6 +2,8 @@ import React from "react";
 import classes from "./frontImage.module.css";
 import { motion } from "framer-motion";
 import { StyledH1, StyledH2 } from "../styled/StyledH1";
+import JolVideo from "../jolVideo/JolVideo";
+import ReactPlayer from "react-player";
 
 const entrance = {
   hidden: { opacity: 0 },
@@ -22,7 +24,6 @@ const container = {
     transition: {
       when: "beforeChildren",
       delayChildren: 3.2,
-      // staggerChildren: 0.2,
     },
   },
 };
@@ -56,11 +57,32 @@ export default function FrontImage() {
     >
       <div className={classes.overlay}></div>
       <div className={classes.imageContainer}>
-        <img
+        {/* <img
           className={classes.frontpageImage}
           src="../images/worship.jpg"
           alt="frontpage"
-        ></img>
+        ></img> */}
+        {/* <iframe
+          className={classes.frontpageImage}
+          src="../video/JOL.mp4"
+          allow="autoplay; fullscreen; muted"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          width="100%"
+          height="100%"
+          scrolling="auto"
+        ></iframe> */}
+        <ReactPlayer
+          // url="../video/JOL.mp4"
+          url="https://www.youtube.com/watch?v=wwNlwamgbl0"
+          autoplay={true}
+          muted={true}
+          width="100%"
+          height="100%"
+          volume="0"
+          loop="true"
+        />
       </div>
       <motion.div
         variants={container}

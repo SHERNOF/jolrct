@@ -15,3 +15,9 @@ export const StyledH2 = styled(StyledH1)`
 export const StyledH3 = styled(StyledH1)`
   font-size: 1.7rem;
 `;
+
+export const StyledH4 = styled(StyledH1)`
+  font-size: 1.4rem;
+  text-shadow: #bbb 0 0 1px, #fff 0 -1px 1px, #fff 0 -2px 1px,
+    rgba(0, 0, 0, 0.8) 0 10px 25px;
+`;

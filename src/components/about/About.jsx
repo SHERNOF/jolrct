@@ -3,7 +3,7 @@ import { useTheme } from "@emotion/react";
 import React from "react";
 import { Box } from "@mui/system";
 import { alpha } from "@mui/material";
-import { StyledH2, StyledH3 } from "../styled/StyledH1";
+import { StyledH2, StyledH3, StyledH4 } from "../styled/StyledH1";
 
 export default function About() {
   const theme = useTheme();
@@ -12,8 +12,8 @@ export default function About() {
       container
       spacing={2}
       sx={{
-        height: "100vh",
-        paddig: "1rem",
+        height: "80vh",
+        // paddig: "1rem",
         color: theme.text.primary,
         background: theme.palette.primary.dark,
         position: "relative",
@@ -23,8 +23,6 @@ export default function About() {
         item
         md={6}
         sx={{
-          // border: "1px solid",
-          // borderColor: "red",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -62,13 +60,13 @@ export default function About() {
                 width: "100%",
               }}
             >
-              <StyledH3
+              <StyledH4
                 style={{
                   paddingLeft: "5rem",
                 }}
               >
                 WHO WE ARE
-              </StyledH3>
+              </StyledH4>
             </Box>
 
             <Typography
@@ -77,7 +75,7 @@ export default function About() {
                 textAlign: "justify",
                 padding: "0 5rem",
                 color: theme.palette.primary.main,
-                fontSize: "1.4rem",
+                fontSize: "1.25rem",
               }}
             >
               Joy Of Life Christian Ministries is a community church of
@@ -93,7 +91,7 @@ export default function About() {
                 textAlign: "justify",
                 padding: "0 5rem",
                 color: theme.palette.primary.main,
-                fontSize: "1.4rem",
+                fontSize: "1.25rem",
               }}
             >
               A church is a group of people who are, joyfully together. We’re
@@ -111,7 +109,7 @@ export default function About() {
                 textAlign: "justify",
                 padding: "0 5rem",
                 color: theme.palette.primary.main,
-                fontSize: "1.4rem",
+                fontSize: "1.25rem",
               }}
             >
               We are guided by seven central values. They reflect both who we
@@ -124,8 +122,6 @@ export default function About() {
         item
         md={6}
         sx={{
-          // border: "1px solid",
-          // borderColor: "red",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -139,7 +135,6 @@ export default function About() {
             alignItems: "center",
             justifyContent: "space-around",
             flexDirection: "column",
-
             background: "rgba(255, 255, 255, 0.05)",
             borderRadius: "16px",
             boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
@@ -155,7 +150,6 @@ export default function About() {
               alignItems: "center",
               justifyContent: "center",
               flexDirection: "row",
-              // border: "1px solid red",
               color: theme.palette.primary.main,
               fontSize: "2rem",
             }}
@@ -182,11 +176,11 @@ export default function About() {
       <Box
         sx={{
           position: "absolute",
-          top: "38rem",
+          top: "21rem",
           left: "-5rem",
           borderRadius: "50%",
-          width: "30rem",
-          height: "30rem",
+          width: "25rem",
+          height: "25rem",
           zIndex: "1",
           background:
             "linear-gradient(to right bottom, rgba(49, 27, 146, .9),rgba(38, 50, 56,.9))",
